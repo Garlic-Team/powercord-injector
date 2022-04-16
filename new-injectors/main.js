@@ -1,4 +1,4 @@
-const rmdirRf = require('../src/fake_node_modules/powercord/util/rmdirRf');
+const rmdirRf = require('../../src/fake_node_modules/powercord/util/rmdirRf');
 const { existsSync } = require('fs');
 const { mkdir, writeFile } = require('fs').promises;
 const { join, sep } = require('path');

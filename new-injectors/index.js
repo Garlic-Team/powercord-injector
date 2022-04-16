@@ -1,6 +1,6 @@
 require('./elevate');
 require('./env_check')(); // Perform checks
-require('../polyfills'); // And then do stuff
+require('../../polyfills'); // And then do stuff
 
 const { join } = require('path');
 const { readFile, writeFile } = require('fs').promises;
