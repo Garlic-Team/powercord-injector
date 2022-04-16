@@ -1,0 +1,3 @@
+[submodule "powercord"]
+	path = powercord
+	url = git@github.com:powercord-org/powercord.git
