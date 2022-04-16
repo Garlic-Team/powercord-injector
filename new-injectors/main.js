@@ -21,7 +21,7 @@ exports.inject = async ({ getAppDir }, discordType) => {
   await Promise.all([
     writeFile(
       join(appDir, 'index.js'),
-      `require(\`${__dirname.replace(RegExp(sep.repeat(2), 'g'), '/')}/../src/patcher.js\`)`
+      `require(\`${__dirname.replace(RegExp(sep.repeat(2), 'g'), '/')}/../../src/patcher.js\`)`
     ),
     writeFile(
       join(appDir, 'package.json'),
