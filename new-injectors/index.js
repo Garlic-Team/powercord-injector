@@ -8,7 +8,7 @@ const { BasicMessages } = require('./log');
 const main = require('./main.js');
 
 // Available: development, canary, (empty string for stable), ptb
-const discordType = process.argv[3] ?? 'canary';
+const discordType = process.argv[3]?.replace('stable', '') ?? 'canary';
 
 let platformModule;
 try {
